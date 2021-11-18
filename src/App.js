@@ -17,7 +17,7 @@ function App() {
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
           <Header />
-          <div className="main-bg-custom">
+          <div className="main-bg-custom h-100">
             <Route exact path="/">
               <Home />
             </Route>

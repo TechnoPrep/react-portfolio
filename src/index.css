@@ -343,35 +343,91 @@ END NORMALIZE CSS
 =================
 */
 
+/**
+  * Root Variables
+ */
 :root{
   --color-dark-grey: #0B0C10;
   --color-blue-grey: #1F2833;
   --color-light-grey: #C5C6C7;
   --color-light-teal: #66FCF1;
   --color-dark-teal: #45A29E;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+
+/**
+  * Default Tag Stylings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: var(--font-roboto);
 }
 
 h4{
   font-size: 1.5rem !important;
 }
 
-a {
-  color: #fff !important;
-  text-decoration: none !important;
-}
-
-a:hover {
-  color: var(--color-light-teal) !important;
-}
-
 p {
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
 ul,
 li {
   list-style-type: none;
+}
+
+/**
+  * Link Stylings
+ */
+a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  opacity: .75;
+}
+
+a:hover h4 {
+  opacity: .75;
+}
+
+.link-hover-teal:hover{
+  color: var(--color-light-teal) !important;
+}
+
+/**
+  * Image Styling
+ */
+.profile-image{
+  border-radius: 50%;
+  max-width: 100%;
+  border-color: var(--color-dark-teal);
+  border: 2rem;
+}
+
+.project-img {
+  width: 100% !important;
+  height: 200px !important;
+  display: flex;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+/**
+  * BG color styling
+ */
+.main-bg-custom{
+  background-color: var(--color-dark-grey) !important;
+}
+
+.secondary-bg-custom {
+  background-color: var(--color-blue-grey) !important;
 }
 
 .header-bg-custom {
@@ -382,39 +438,60 @@ li {
   background-color: var(--color-dark-grey);
 }
 
-.main-bg-custom{
-  background-color: var(--color-dark-grey);
-}
-
-.secondary-bg-custom {
-  background-color: var(--color-blue-grey);
-}
-
 .home-span{
   color: var(--color-light-teal);
   font-size: 3.5rem;
 }
 
-.profile-image{
-  border-radius: 50%;
-  max-width: 100%;
-  border-color: var(--color-dark-teal);
-  border: 2rem;
+/**
+  * Column and Container Width Styling
+ */
+.w-85-custom {
+  width: 85%!important;
 }
 
+.col-20 {
+  flex: 0 0 auto;
+  width: 20% !important;
+}
+
+.col-40 {
+  flex: 0 0 auto;
+  width: 40% !important;
+}
+
+/**
+  * Service / Contact Styling
+ */
 .services-items{
   background-color: var(--color-dark-grey);
+}
+
+.contact-items {
+  background-color: var(--color-dark-grey);
+  border-radius: 50%;
 }
 
 .light-teal-text{
   color: var(--color-light-teal);
 }
 
-.service-item-border{
+/**
+  * Shadow Styling
+ */
+.contact-item-shadow-border{
   background-color: var(--color-dark-teal)!important;
   box-shadow: 0 .25rem 1rem var(--color-dark-teal)!important;
 }
 
+.light-teal-shadow-border{
+  background-color: var(--color-dark-teal)!important;
+  box-shadow: 0 .25rem 1rem var(--color-dark-teal)!important;
+}
+
+/**
+  * Text / Line Stylings
+ */
 .roboto-400{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -442,31 +519,67 @@ li {
   font-weight: 500;
 }
 
-.contact-me-box {
-  border: .25rem solid var(--color-light-teal);
-  letter-spacing: .25rem;
-}
-
 .section-header-text {
-  letter-spacing: .25rem;
+  letter-spacing: .215rem;
   text-transform: uppercase;
 }
 
+/**
+  * Custom Card Stylings
+ */
+.card-custom {
+  border-radius: .5rem !important;
+}
+
+.card-body-custom {
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+.contact-card-custom {
+  border-radius: 50% !important;
+}
+
+/**
+  * Custom Button Styling
+ */
 button {
   background-color: var(--color-dark-grey);
 }
 
-.col-20 {
-  flex: 0 0 auto;
-  width: 20% !important;
+.contact-me-btn {
+  border: .25rem solid var(--color-light-teal);
+  letter-spacing: .25rem;
 }
 
-.col-40 {
-  flex: 0 0 auto;
-  width: 40% !important;
+.view-project-btn {
+  border: .15rem solid var(--color-light-teal);
+  letter-spacing: .15rem;
+  padding: .5rem;
 }
 
-.project-img {
-  width: 100% !important;
-  height: 200px !important;
+.contact-me-btn:hover,
+.view-project-btn:hover{
+  opacity: .75;
+  box-shadow: 0 .25rem 1rem var(--color-dark-teal)!important;
 }
+
+/**
+  * Font Awesome Stylings
+ */
+.footer-fa-icons {
+  opacity: .5;
+}
+
+.footer-fa-icons:hover {
+  opacity: 1;
+}
+
+.contact-fa-icons {
+  opacity: .75;
+}
+
+.contact-fa-icons:hover {
+  opacity: 1;
+}
+

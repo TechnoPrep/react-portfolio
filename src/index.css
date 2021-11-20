@@ -355,6 +355,15 @@ END NORMALIZE CSS
   --font-roboto: 'Roboto', sans-serif;
 }
 
+html {
+  height: 100%;
+  overflow: auto;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
 
 /**
   * Default Tag Stylings

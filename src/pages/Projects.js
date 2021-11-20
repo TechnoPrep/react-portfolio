@@ -30,7 +30,7 @@ const Cards = () => {
         </div>
         <div
           className="row d-flex align-content-center"
-          style={{ position: "relative", height: "504px" }}
+          
         >
 
           <div className="col-sm-6 col-lg-4 d-flex justify-content-center">

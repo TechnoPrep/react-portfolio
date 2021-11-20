@@ -10,11 +10,11 @@ app.use(express.json());
 // Serve up static assets
 app.use('/images', express.static(path.join(__dirname, '../client/images')));
 
-app.use(function(request, response){
-  if(!request.secure){
-    response.redirect("https://" + request.headers.host + request.url);
-  }
-});
+// app.use(function(request, response){
+//   if(!request.secure){
+//     response.redirect("https://" + request.headers.host + request.url);
+//   }
+// });
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));

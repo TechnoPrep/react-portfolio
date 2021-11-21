@@ -16,7 +16,7 @@ faFile
 
 const Contact = () => {
   return (
-    <section className="py-5 secondary-bg-custom">
+    <section className="py-5 secondary-bg-custom fixed">
       <div className="Row">
         <div className="col text-center text-white">
           <h5 className="roboto-400 light-teal-text section-header-text">

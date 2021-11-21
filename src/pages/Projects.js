@@ -8,7 +8,7 @@ import cairn from "../images/Cairn_v2.png";
 const Projects = () => {
   return (
     <Router>
-      <main className="py-5 secondary-bg-custom">
+      <main className="py-5 secondary-bg-custom fixed">
         <div className="row col-12 d-flex align-items-top">
           <div className="container">
             <Cards />
@@ -21,8 +21,8 @@ const Projects = () => {
 
 const Cards = () => {
   return (
-    <div class="d-flex justify-content-center">
-      <div class="w-85-custom">
+    <div className="d-flex justify-content-center">
+      <div className="w-85-custom">
         <div className="d-flex justify-content-center">
             <h5 className="roboto-400 light-teal-text text-start section-header-text">
               Projects

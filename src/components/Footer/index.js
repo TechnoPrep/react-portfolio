@@ -14,8 +14,9 @@ const Footer = () => {
   const location = useLocation();
   const history = useHistory();
   return (
-    <footer className="d-flex flex-wrap align-items-center py-3 footer-bg-custom fixed-bottom">
-      <div className="container text-center mb-5">
+    <footer className={`d-flex flex-wrap align-items-center py-3 footer-bg-custom 
+    ${location.pathname === '/' ? '' : 'fixed-bottom'}`}>
+      <div className="container text-center">
         <div className="row col-12 py-lg-3"></div>
         <div className="row social-links d-flex justify-content-center">
           <div className="col-lg-4 d-flex justify-content-center">

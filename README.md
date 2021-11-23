@@ -2,7 +2,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  This application allows you to track your expenses, whether you are currently corrected to the internet, or you are temporarily offline. Once you re-establish connection, the stored requests will then be pushed to the applications database.
+  This application is my Personal Portfolio page built in Native React.
 
   ## Table of Contents 
   - [Installation](#installation)
@@ -23,7 +23,7 @@
   7. run 'npm start'
   
   ## Usage
-  This application is intended for you to track your expenses.
+  This application is intended for use in showing future employers or colleagues.
 
   ## Deployed App (Heroku)
   [React Personal Portfolio Page](https://www.nwehrlich.com)

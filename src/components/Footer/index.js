@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="row social-links d-flex justify-content-center">
           <div className="col-lg-4 d-flex justify-content-center">
             <div className="col-2 footer-fa-icons">
-              <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/nathaniel-ehrlich-018758121/">
+              <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/nwehrlich ">
                 <FontAwesomeIcon icon={faLinkedin} size="3x" color="#fff" />
               </a>
             </div>

@@ -14,7 +14,7 @@ faEnvelope,
 faFile
 } from "@fortawesome/free-solid-svg-icons";
 
-const Contact = () => {
+const Contact = ({showTopNavMenu}) => {
   return (
     <section className="py-5 secondary-bg-custom fixed">
       <div className="Row">
@@ -67,7 +67,7 @@ const Contact = () => {
           <div className="col">
             <div className="card card-cover contact-card-custom h-100 overflow-hidden contact-item-shadow-border">
               <div className="d-flex flex-column h-100 contact-items p-5 pb-3 text-white text-shadow-1">
-              <a href="https://www.linkedin.com/in/nathaniel-ehrlich-018758121/" target="_blank" rel="noreferrer" className="contact-fa-icons">
+              <a href="https://www.linkedin.com/in/nwehrlich " target="_blank" rel="noreferrer" className="contact-fa-icons">
                 <div className="d-flex justify-content-center"> 
                   <FontAwesomeIcon
                    icon={faLinkedin} 

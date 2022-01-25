@@ -515,7 +515,8 @@ a:hover h4 {
   font-weight: 400;
 }
 
-.name-text {
+.name-text,
+.colored-period {
   line-height: .8;
   font-size: 3rem;
   font-weight: 500;
@@ -601,3 +602,54 @@ button {
   opacity: 1;
 }
 
+.col1,
+.col2,
+.col3 {
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 1115px) {
+
+  .social-text {
+    font-size: .95rem;
+  }
+
+  .name-text,
+  .name-line {
+    padding-left: 20%;
+  }
+
+  .social-text {
+    padding-left: 25%;
+  }
+
+
+}
+
+/* @media screen and (max-width: 992px) {
+
+
+} */
+
+@media screen and (max-width: 786px) {
+
+
+
+}
+
+@media screen and (max-width: 690px) {
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+
+
+}
